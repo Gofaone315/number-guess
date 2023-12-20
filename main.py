@@ -42,14 +42,6 @@ class LuckyGuessApp(App):
         self.coin_count_label = Label(text='Coins: 0', font_size=36, size_hint=(None, None), size=(300, 60), pos_hint={'center_x': 0.5, 'top': 0.95}, color=(1, 0.647, 0, 1))
         layout.add_widget(self.coin_count_label)
 
-        facebook_btn = Button(text='Facebook', size_hint=(None, None), size=(200, 80), pos_hint={'left': 0.05, 'bottom': 0.05}, background_color=(0, 0.6, 0.5, 1), font_size=36)
-        facebook_btn.bind(on_press=lambda instance: webbrowser.open("https://facebook.com/gofaone315"))
-        layout.add_widget(facebook_btn)
-
-        tiktok_btn = Button(text='TikTok', size_hint=(None, None), size=(200, 80), pos_hint={'right': 0.95, 'bottom': 0.05}, background_color=(0, 0.6, 0.5, 1), font_size=36)
-        tiktok_btn.bind(on_press=lambda instance: webbrowser.open("https://tiktok.com/@gofaonetlalang"))
-        layout.add_widget(tiktok_btn)
-
         return layout
         
     def check_guess(self, instance):
